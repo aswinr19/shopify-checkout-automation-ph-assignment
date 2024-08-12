@@ -1,0 +1,15 @@
+{
+  "name": "shopify-checkout",
+  "version": "1.0.0",
+  "main": "shopifyCheckout.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "selenium-webdriver": "^4.23.0"
+  }
+}
