@@ -10,9 +10,9 @@ const { Builder, Browser, By, Key, until } = require("selenium-webdriver");
   const address = "";
   const city = "";
   const pincode = "";
-
+  const link = "https://d429d4-c7.myshopify.com/";
   try {
-    await driver.get("https://d429d4-c7.myshopify.com/");
+    await driver.get(link);
 
     //maximize window for better visibility
     await driver.manage().window().maximize();
