@@ -1,6 +1,6 @@
 const { Builder, Browser, By, Key, until } = require("selenium-webdriver");
 
-(async function example() {
+(async function checkout() {
   let driver = await new Builder().forBrowser(Browser.FIREFOX).build();
 
   const email = "";
@@ -11,6 +11,7 @@ const { Builder, Browser, By, Key, until } = require("selenium-webdriver");
   const city = "";
   const pincode = "";
   const link = "https://d429d4-c7.myshopify.com/";
+  
   try {
     await driver.get(link);
 
@@ -144,7 +145,7 @@ const { Builder, Browser, By, Key, until } = require("selenium-webdriver");
     // after getting the shipping methods (cod by default) click on the checkout button again to checkout
     await driver.actions().click(checkOutPayBtn).perform();
     console.log("checkout successful");
-    // order palced!
+    // order placed!
     await driver.sleep(10000);
 
     // to view the order number, refresh the page
